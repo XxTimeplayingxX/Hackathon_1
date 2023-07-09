@@ -1,0 +1,85 @@
+/* Barra de navegación */
+.navbar{
+    padding: 1rem;
+    background-color: rgb(65, 199, 250) !important;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-collapse a{
+    color: white !important;
+    font-size: 15px;
+}
+.navbar .navbar-nav .nav-item a{
+    font-size: 20px;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 50vh;
+}
+ .hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: rgb(65, 199, 250);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
+    z-index: -1;
+} 
+
+.hero .hero__prin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero .hero__prin h1{
+    margin-top: 50px;
+    font-size: 130px;
+    font-family:'Rubik Dirt', cursive;;
+}
+.hero .hero__prin h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.hero .hero__prin .hero__conocenos{
+    text-decoration: none !important;
+    cursor: pointer;
+    outline: 0;
+    color: rgb(65, 199, 250);
+    background-color: #fff;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: 0.5s;
+   
+
+}
+.hero .hero__prin .hero__conocenos:hover{
+        color: rgb(65, 199, 250);
+        background-color: #fff;
+        padding: 12px 240px;
+    
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
